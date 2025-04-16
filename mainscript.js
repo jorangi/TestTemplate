@@ -1,7 +1,7 @@
-function showTooltip(event) {
+function showTooltip(event, key) {
     const tooltip = event.currentTarget.querySelector('.tooltip');
     if (tooltip) {
-      tooltip.innerHTML = siiraTooltip;
+      tooltip.innerHTML = Tooltip[key];
       tooltip.style.display = 'block';
     }
 }
